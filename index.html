@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="playlistStuff.js"></script>
+<link rel="stylesheet" type="text/css" href="playlistStuff.css">
+  <meta charset="utf-8">
+  <title>Songs and Playlists</title>
+</head>
+<body>
+
+
+<div class="container">
+
+  <div ng-app='app' ng-controller='mainCtrl'>
+    <h1>Create Songs and Playlists</h1>
+    
+    <div class="row">
+        <div class="col-2">
+    <form name='trackForm' ng-submit='addNew(trackForm)'> 
+      
+      <input placeholder='Song Name' ng-model='trackForm.name'/> 
+      <input placeholder='Track Image' ng-model='trackForm.url'/>
+      <input placeholder='Genre' ng-model='trackForm.genre'/>
+      
+      <button type='submit'>Add Song</button>
+    </form>
+    
+    
+    <form name='playlistForm' ng-submit='addNewPlaylist(playlistForm)'> 
+      
+      <input placeholder='Playlist Name' ng-model='playlistForm.name'/> 
+      <button type='submit'>Create Playlist</button>
+    </form>
+    
+    
+    
+    </div>
+    
+    
+    <div class="col">
+          <h2>Songs</h2>
+          <ul class='Track-list'>
+          <li ng-repeat='data in tracks'>
+              <track data='data' />
+          </li>
+          </ul>
+    </div>
+      
+      
+      
+    </div>
+    <h2>Playlists</h2>
+    <div class="row">
+      
+        
+      <ul class='Track-list'>
+      
+      <li ng-repeat='data in playlists'>
+        
+        <playlist data='data' />
+      </li>
+      </ul>
+     
+    </div>
+    
+    
+    
+    
+    
+  </div>
+  
+ </div>
+  
+</body>
+</html>

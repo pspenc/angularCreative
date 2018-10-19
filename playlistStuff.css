@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(175,175,175);
+}
+
+.Track-list {
+  list-style: none;
+}
+
+
+
+.col{
+  margin-left: 20%;
+}
+
+.Playlist  {
+  list-style: none;
+}
+
+.Track {
+  text-align: center;  
+}
+
+.Track img {
+  width: 100px;
+  height: 100px;
+  
+}
+
+
+
+.Track h4 {
+  text-transform: capitalize;
+  color: red;
+}
+.Track p2 {
+  color: red;
+}
