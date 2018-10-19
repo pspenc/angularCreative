@@ -15,7 +15,7 @@
 
   <div ng-app='app' ng-controller='mainCtrl'>
     <h1>Create Songs and Playlists</h1>
-    
+    <h2>Songs</h2>
     <div class="row">
         <div class="col-2">
     <form name='trackForm' ng-submit='addNew(trackForm)'> 
@@ -27,7 +27,7 @@
       <button type='submit'>Add Song</button>
     </form>
     
-    
+    <h2>Playlists</h2>
     <form name='playlistForm' ng-submit='addNewPlaylist(playlistForm)'> 
       
       <input placeholder='Playlist Name' ng-model='playlistForm.name'/> 
@@ -40,7 +40,7 @@
     
     
     <div class="col">
-          <h2>Songs</h2>
+          
           <ul class='Track-list'>
           <li ng-repeat='data in tracks'>
               <track data='data' />
@@ -51,7 +51,7 @@
       
       
     </div>
-    <h2>Playlists</h2>
+    
     <div class="row">
       
         

@@ -1,9 +1,19 @@
 body{
-    background-color: rgb(175,175,175);
+    background-color: darkgray;
+}
+h1{
+  color: lightblue;
+  font-family: georgia;
+}
+
+h2{
+  color: lightgreen;
+  font-family: georgia;
 }
 
 .Track-list {
   list-style: none;
+  font-family: courier;
 }
 
 
@@ -14,6 +24,7 @@ body{
 
 .Playlist  {
   list-style: none;
+  font-family: courier, bold;
 }
 
 .Track {
@@ -30,8 +41,10 @@ body{
 
 .Track h4 {
   text-transform: capitalize;
-  color: red;
+  color: yellow;
+  font-family:courier;
 }
 .Track p2 {
   color: red;
+  font-family: courier;
 }
